@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bom js</title>
+</head>
+<body>
+    <h1>CONTOH BOM JS</h1>
+    <button id="showURL">TAMPILKAN URL</button>
+    <button id="goToGoogle">TAMPILKAN GOOGLE</button>
+    <script>
+        //mengakses objek bom
+        const showURLButton = document.getElementById("showURL");
+        const goToGoogle = document.getElementById("goToGoogle");
+
+        //mengakses url
+        showURLButton.addEventListener("click", ()=>{
+            alert("Current URL :" + window.location.href);
+        });
+
+        //Menampilkan Halaman Google
+        goToGoogleButton.addEventListener("click", ()=>{
+            window.location.href = "https://www.google.com"
+        });
+    </script>
+</body>
+</html>

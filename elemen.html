@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>element</title>
+</head>
+<body>
+    <ul id="list">
+        <li>Item1</li>
+        <li>Item2</li>
+    </ul>
+    <button id="addItem">Add Item</button>
+    <script>
+        //mengakses elemen menggunakan document object
+        const list = document.getElementById("list");
+        const button = document.getElementById("addItem");
+        
+        //menambahkan elemen baru
+        button.addEventListener("click", ()=>{
+        //membuat elemen baru
+        const newItem = document.createElement("li");
+        //membuat text
+        newItem.textContent = "New Item";
+        //Menambahkan Elemen di dalam list
+        list.appendChild(newItem);
+        });
+    </script>
+</body>
+</html>

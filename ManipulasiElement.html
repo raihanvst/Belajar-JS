@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengakses dan Memanipulasi Element</title>
+</head>
+<body>
+    <h1 id="header">Hey Bacon</h1>
+    <p class="description">Ini adalah contoh kode program dari document object</p>
+    <button id="changeContent">Ubah Context</button>
+    <script>
+        const header = document.getElementById("header");
+        const paragraph = document.querySelector(".description");
+        const button = document.getElementById("changeContent");
+
+        //memanipulasi konten elemen
+        button.addEventListener("click", ()=>{
+            header.textContent = "Hello, Document Object";
+            paragraph.textContent = "Content telah di ubah oleh document object";
+        });
+    </script>
+</body>
+</html>
